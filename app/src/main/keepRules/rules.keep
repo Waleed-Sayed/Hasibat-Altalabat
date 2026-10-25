@@ -1,0 +1,7 @@
+# Add project specific R8 rules here.
+# AGP will combine all keep rule files in src/main/keepRules to pass to R8
+
+# Keep JavaScript Interface methods for WebView PDF generation and sharing
+-keepclassmembers class com.waleedsayed.hasibat_altalabat.WebPrintInterface {
+    @android.webkit.JavascriptInterface <methods>;
+}
